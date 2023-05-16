@@ -1,37 +1,37 @@
 const firstBook = {
   writer: "Akshat Gupta",
   title: "The Hidden Hindu",
-  img: "../public/assets/the-hidden-hindu.jpg",
+  img: "../public/the-hidden-hindu.jpg",
 }
 const secondBook = {
   writer: "A.C. Bhaktivendanta Swami Prabhupada",
   title: "Bhagwat Gita",
-  img: "../public/assets/bhagwat-gita.jpg",
+  img: "../public/bhagwat-gita.jpg",
 }
 const thirdBook = {
   writer: "Faf Du Plessis",
   title: "Faf Through Fire",
-  img: "../public/assets/faf.jpg",
+  img: "../public/faf.jpg",
 }
 const fourthBook = {
   writer: "Robert T. Kiyosaki",
   title: "Rich Dad Poor Dad",
-  img: "../public/assets/rich-dad-poor-dad.jpg",
+  img: "../public/rich-dad-poor-dad.jpg",
 }
 const fifthBook = {
   writer: "Francesc Miralles",
   title: "Ikigai",
-  img: "../public/assets/ikigai.jpg",
+  img: "../public/ikigai.jpg",
 }
 const sixthBook = {
   writer: "Robert Greene",
   title: "The 48 Laws of Power",
-  img: "../public/assets/laws-of-power.jpg",
+  img: "../public/laws-of-power.jpg",
 }
 const seventhBook = {
   writer: "James Clear",
   title: "Atomic Habits",
-  img: "../public/assets/atomic-habits.jpg",
+  img: "../public/atomic-habits.jpg",
 }
 
 const BookList = () => {
