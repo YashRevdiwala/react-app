@@ -76,15 +76,15 @@ const BookList = () => {
   )
 }
 
-const Book = (props) => {
+const Book = ({ image, writer, title }) => {
   return (
     <div className="book">
-      <img src={props.image} alt={props.title} />
-      <h2>{props.title}</h2>
-      <h4>{props.writer}</h4>
+      <img src={image} alt={title} />
+      <h2>{title}</h2>
+      <h4>{writer}</h4>
     </div>
-  )
-}
+  );
+};
 
 // const Image = () => (
 //   <img
