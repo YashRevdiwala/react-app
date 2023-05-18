@@ -7,13 +7,13 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .booklist {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .booklist {
     grid-template-columns: repeat(1, 1fr);
   }
