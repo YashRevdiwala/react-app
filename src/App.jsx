@@ -83,8 +83,8 @@ const Book = ({ image, writer, title }) => {
       <h2>{title}</h2>
       <h4>{writer}</h4>
     </div>
-  );
-};
+  )
+}
 
 // const Image = () => (
 //   <img
