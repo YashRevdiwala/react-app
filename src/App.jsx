@@ -47,40 +47,10 @@ const books = [
 const BookList = () => {
   return (
     <div className="booklist">
-      <EventExamples />
       {books.map((data) => {
         return <Book {...data} key={data.id} />
       })}
     </div>
-  )
-}
-
-const EventExamples = () => {
-  const handleInput = (event) => {
-    console.log(event.target)
-    console.log(event.target.name)
-    console.log(event.target.value)
-    console.log("Form input")
-  }
-  const handleSubmit = () => {
-    // alert("Submit")
-  }
-  return (
-    <section>
-      <form>
-        <h2>Form</h2>
-        <input
-          type="text"
-          style={{ margin: "1rem 0" }}
-          placeholder="txt box"
-          name="example"
-          onChange={handleInput}
-        />
-        <button onClick={handleSubmit} style={{ marginLeft: ".3rem" }}>
-          Submit
-        </button>
-      </form>
-    </section>
   )
 }
 
