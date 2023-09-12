@@ -1,4 +1,7 @@
 /* eslint-disable react/prop-types */
+
+import Book from "./pages/Book"
+
 const books = [
   {
     writer: "Akshat Gupta",
@@ -46,21 +49,14 @@ const books = [
 
 const BookList = () => {
   return (
-    <div className="booklist">
-      {books.map((data) => {
-        return <Book {...data} key={data.id} />
-      })}
-    </div>
-  )
-}
-
-const Book = (props) => {
-  return (
-    <article className="book">
-      <img src={props.img} alt={props.title} />
-      <h2>{props.title}</h2>
-      <h4>{props.writer}</h4>
-    </article>
+    <>
+      <h1>Amazon Best Sellers</h1>
+      <div className="booklist">
+        {books.map((data, index) => {
+          return <Book {...data} key={data.id} number={index} />
+        })}
+      </div>
+    </>
   )
 }
 
@@ -78,7 +74,6 @@ export default BookList
 //   )
 // }
 
-// // eslint-disable-next-line react/prop-types
 // const Book = (props) => {
 //   const { writer, title, img } = props.book
 //   return (
@@ -89,12 +84,3 @@ export default BookList
 //     </article>
 //   )
 // }
-
-// const Image = () => (
-//   <img
-//     src="https://images-eu.ssl-images-amazon.com/images/I/81ZI8RyyynL._AC_UL600_SR600,400_.jpg"
-//     alt="The Hidden Hindu"
-//   />
-// )
-// const Title = () => <h2>The Hidden Hindu</h2>
-// const Writer = () => <h4>Akshat Gupta</h4>
